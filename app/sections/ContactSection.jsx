@@ -31,7 +31,7 @@ const ContactSection = () => {
               Mobile App Development
             </span>
           </div>
-          <div className="flex gap-14 mt-5">
+          <div className="flex flex-wrap md:flex-nowrap gap-14 mt-5">
             <form className="flex relative flex-col w-[70%]">
               <img
                 src="/contact (3).png"
