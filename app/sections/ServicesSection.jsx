@@ -11,7 +11,7 @@ const ServicesSection = () => {
                 See what we can do for you
               </h1>
             </div>
-            <div className="md:w-[35%] hidden">
+            <div className="md:w-[35%] hidden md:block">
               <img className="w-52" src="/services (1).png" />
             </div>
             <div className="md:w-[70%] w-[95%]">

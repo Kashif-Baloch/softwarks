@@ -87,7 +87,7 @@ const TeamSection = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-4 w-[25%] justify-center items-end">
+          <div className="hidden md:flex gap-4 w-[25%] justify-center items-end">
             <span className="rounded-full rotate-180 p-4 bg-[#3F3F3F]">
               <img src="/Arrow 2.png" className="w-6 h-6" />
             </span>
