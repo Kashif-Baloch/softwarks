@@ -4,7 +4,7 @@ const ServicesSection = () => {
   return (
     <div>
       <div className="max-w-5xl  mx-auto container px-4 my-20  rounded-lg">
-        <div className="md:py-12 py-2 relative rounded-lg services-bg">
+        <div className="md:py-12 py-2 relative rounded-lg services-bg rommobg">
           <div className="flex relative z-10 flex-col md:flex-row  items-center">
             <div className="md:w-[50%] w-[95%] md:pl-32">
               <h1 className="font-bold text-5xl outfit text-[#D7D7D7] py-10">
@@ -44,15 +44,15 @@ const ServicesSection = () => {
 
           <img
             src="/services/services (1).png"
-            className="absolute top-0 opacity-35 left-[17%] h-full"
+            className="absolute pointer-events-none top-0 opacity-35 left-[17%] h-full"
           />
           <img
             src="/services/services (2).png"
-            className="absolute top-5 left-0"
+            className="absolute pointer-events-none top-5 left-0"
           />
           <img
             src="/services/services (3).png"
-            className="absolute bottom-3 right-6"
+            className="absolute pointer-events-none bottom-3 right-6"
           />
         </div>
       </div>

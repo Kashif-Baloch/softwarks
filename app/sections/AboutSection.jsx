@@ -22,11 +22,11 @@ const AboutSection = () => {
             </p>
             <img
               src="/abso (1).png"
-              className="absolute top-0 left-10 z-10 w-6 h-6"
+              className="absolute pointer-events-none top-0 left-10 z-10 w-6 h-6"
             />
             <img
               src="/abso (2).png"
-              className="absolute top-0 right-32 z-10 w-[10rem]"
+              className="absolute pointer-events-none top-0 right-0 md:right-32 z-10 w-[10rem]"
             />
           </div>
         </div>

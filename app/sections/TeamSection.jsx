@@ -5,14 +5,14 @@ const TeamSection = () => {
     <div className="relative">
       <img
         src="/teamab.png"
-        className="absolute top-[50%] translate-y-[-50%] right-0 w-[15%]"
+        className="absolute pointer-events-none top-[50%] translate-y-[-50%] right-0 w-[15%]"
       />
       <div className="max-w-5xl mx-auto px-4 container mt-20">
         <div>
           <h1 className="text-4xl text-green-600 font-bold">Our Team</h1>
         </div>
-        <div className="flex flex-col md:flex-row gap-12 space-y-8 mt-16">
-          <div className="bg-[#24A556] py-5 flex items-end rounded-lg md:w-[35%] h-[25rem] relative">
+        <div className="flex flex-col md:flex-row gap-12 space-y-8 md:space-y-0 mt-16">
+          <div className="bg-[#24A556] py-5 flex items-end rounded-lg sm:w-[70%] sm:mx-auto md:w-[35%] h-[25rem] relative">
             <img
               className="w-full border-b absolute top-[-50px] left-[20px] h-[90%]"
               src="/team (3).png"
@@ -37,7 +37,7 @@ const TeamSection = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#24A556] py-5 flex items-end rounded-lg md:w-[23%] h-[25rem] relative">
+          <div className="bg-[#24A556] py-5 flex items-end rounded-lg sm:w-[70%] sm:mx-auto md:w-[23%] h-[25rem] relative">
             <img
               className="w-full border-b absolute top-[-50px] left-0 h-[90%]"
               src="/team (1).png"
@@ -62,7 +62,7 @@ const TeamSection = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#24A556] py-5 flex items-end rounded-lg md:w-[23%] h-[25rem] relative">
+          <div className="bg-[#24A556] py-5 flex items-end rounded-lg sm:w-[70%] sm:mx-auto md:w-[23%] h-[25rem] relative">
             <img
               className="w-full border-b absolute top-[-90px] left-0 h-[100%]"
               src="/team (2).png"

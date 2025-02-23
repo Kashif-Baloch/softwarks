@@ -16,3 +16,17 @@
 .services-bg {
   background: url("/serv.png")  no-repeat;
 }
+
+@media screen and (width >= 1840px) {
+  .log-wide {
+width: 30%;
+  }
+  
+}
+
+@media screen and (width<=344px) {
+  .rommobg {
+    background: #3f3f3f;
+    height: 37rem;
+  }
+}

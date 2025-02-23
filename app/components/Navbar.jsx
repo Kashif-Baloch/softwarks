@@ -1,13 +1,14 @@
 "use client";
 import { useState } from "react";
-import { AiOutlineSlack } from "react-icons/ai";
+import { CiMenuFries } from "react-icons/ci";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-      <nav className="flex my-0 bg-white md:my-10 p-4 shadow-md rounded-lg items-center justify-between max-w-5xl px-6 mx-auto container">
+      <nav className="flex my-0 bg-white lg:my-10 p-4 shadow-md rounded-lg items-center justify-between max-w-5xl px-6 mx-auto container">
         <div>
           <h1 className="font-semibold text-xl md:text-2xl text-black">
             Zjox Softwarks
@@ -25,9 +26,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center justify-center space-x-2">
-          <AiOutlineSlack
+          <CiMenuFries
             onClick={() => setShowNav(!showNav)}
-            className="size-9"
+            className="size-6 md:hidden"
           />
           <img className="w-6 h-6" src="/search.png" />
         </div>
@@ -38,7 +39,7 @@ const Navbar = () => {
         } flex items-center flex-col justify-center gap-6 bg-white fixed
       top-0 left-0 h-full w-full text-gray-600`}
       >
-        <AiOutlineSlack
+        <AiFillCloseCircle
           onClick={() => setShowNav(!showNav)}
           className="size-9 absolute top-5 right-5"
         />
