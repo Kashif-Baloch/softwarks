@@ -16,13 +16,27 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="hidden md:flex text-sm items-center space-x-8  text-gray-600">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Services</a>
-            <a href="#">Client</a>
-            <a href="#">Team</a>
-            <a href="#">Blogs</a>
-            <a href="#">Contact</a>
+            <a className="hover:text-green-600 transition-all" href="#">
+              Home
+            </a>
+            <a className="hover:text-green-600 transition-all" href="#about">
+              About
+            </a>
+            <a className="hover:text-green-600 transition-all" href="#projects">
+              Projects
+            </a>
+            <a className="hover:text-green-600 transition-all" href="#services">
+              Services
+            </a>
+            <a className="hover:text-green-600 transition-all" href="#team">
+              Team
+            </a>
+            <a className="hover:text-green-600 transition-all" href="#features">
+              Features
+            </a>
+            <a className="hover:text-green-600 transition-all" href="#contact">
+              Contact
+            </a>
           </ul>
         </div>
         <div className="flex items-center justify-center space-x-2">
@@ -43,13 +57,27 @@ const Navbar = () => {
           onClick={() => setShowNav(!showNav)}
           className="size-9 absolute top-5 right-5"
         />
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
-        <a href="#">Client</a>
-        <a href="#">Team</a>
-        <a href="#">Blogs</a>
-        <a href="#">Contact</a>
+        <a onClick={() => setShowNav(!showNav)} href="#">
+          Home
+        </a>
+        <a onClick={() => setShowNav(!showNav)} href="#about">
+          About
+        </a>
+        <a onClick={() => setShowNav(!showNav)} href="#projects">
+          Projects
+        </a>
+        <a onClick={() => setShowNav(!showNav)} href="#services">
+          Services
+        </a>
+        <a onClick={() => setShowNav(!showNav)} href="#team">
+          Team
+        </a>
+        <a onClick={() => setShowNav(!showNav)} href="#features">
+          Features
+        </a>
+        <a onClick={() => setShowNav(!showNav)} href="#contact">
+          Contact
+        </a>
       </ul>
     </header>
   );

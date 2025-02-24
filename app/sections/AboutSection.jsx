@@ -1,11 +1,20 @@
+"use client";
 import React from "react";
 import FlowBar from "../components/FlowBar";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
     <>
       <FlowBar />
-      <div className="bg-white mt-[-2rem] rounded-tl-xl rounded-tr-xl">
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        initial={{ opacity: 0, y: 50 }}
+        transition={{ duration: 3 }}
+        id="about"
+        className="bg-white mt-[-2rem] rounded-tl-xl rounded-tr-xl"
+      >
         <div className="flex md:flex-row flex-col max-w-5xl pt-24 relative px-1 container mx-auto py-12 justify-between">
           <div className="md:w-1/2 w-full">
             <img src="/about.png" />
@@ -22,15 +31,15 @@ const AboutSection = () => {
             </p>
             <img
               src="/abso (1).png"
-              className="absolute pointer-events-none top-0 left-10 z-10 w-6 h-6"
+              className="absolute hidden lg:block pointer-events-none top-0 left-10 z-10 w-6 h-6"
             />
             <img
               src="/abso (2).png"
-              className="absolute pointer-events-none top-0 right-0 md:right-32 z-10 w-[10rem]"
+              className="absolute hidden lg:block pointer-events-none top-0 right-0 md:right-32 z-10 w-[10rem]"
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

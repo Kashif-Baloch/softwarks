@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
@@ -22,16 +24,22 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <div className="">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+      id="projects"
+    >
       <div className="flex container pt-10 mx-auto max-w-5xl px-4 items-center justify-between">
         <h1 className="font-bold text-3xl md:text-4xl text-green-600 outfit">
           Projects
         </h1>
-        <img src="/projects.png" className="w-24" />
+        <img src="/svg/btn (2).svg" className="w-24" />
       </div>
-      <div className="my-10 container pt-10 mx-auto max-w-5xl px-4">
+      <div className=" container pt-10 mx-auto max-w-5xl px-4">
         <Marquee>
-          <div className="flex ml-[-487px] gap-4 mt-10">
+          <div className="flex ml-[-487px] gap-4 ">
             {list.map((_, i) => {
               return (
                 <div
@@ -80,7 +88,7 @@ const ProjectsSection = () => {
           </div>
         </Marquee>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

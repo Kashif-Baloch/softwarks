@@ -1,9 +1,16 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 
 const FeatureSection = () => {
   return (
-    <div>
-      <div className="max-w-5xl container mx-auto px-4 mt-10">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+    >
+      <div id="features" className="max-w-5xl container mx-auto px-4 mt-10">
         <h1 className="text-green-600 my-4 font-bold outfit text-4xl">
           Featured Content
         </h1>
@@ -60,7 +67,7 @@ const FeatureSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

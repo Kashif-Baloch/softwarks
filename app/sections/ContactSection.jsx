@@ -1,13 +1,21 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
 
 const ContactSection = () => {
+  const [btn, setBtn] = useState("1");
   return (
-    <div>
-      <div className="bg-[#F3F3F3] relative py-10 mt-14 ">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+    >
+      <div id="contact" className="bg-[#F3F3F3] relative py-10 mt-14 ">
         <img src="/contact.png" className="absolute top-6 right-0 w-[45%]" />
         <img
           src="/contact (2).png"
-          className="absolute pointer-events-none top-[40%] right-[10%] w-[10rem]"
+          className="absolute hidden lg:block pointer-events-none top-[40%] right-[10%] w-[10rem]"
         />
         <img
           src="/contact (1).png"
@@ -21,13 +29,40 @@ const ContactSection = () => {
             <p className="orbitron text-sm">What we can do for you</p>
           </div>
           <div className="mt-10 flex flex-wrap items-center gap-4 md:space-x-4">
-            <span className="text-white orbitron text-sm bg-[#3F3F3F] px-4 py-3 rounded-full">
+            <span
+              onClick={() => {
+                setBtn("1");
+              }}
+              className={`${
+                btn == "1"
+                  ? "text-white bg-[#3F3F3F]"
+                  : "text-black  border-gray-300"
+              } orbitron cursor-pointer text-sm border px-4 py-3 rounded-full`}
+            >
               Product design
             </span>
-            <span className="text-black border text-sm border-gray-300 orbitron px-4 py-3 rounded-full">
+            <span
+              onClick={() => {
+                setBtn("2");
+              }}
+              className={`${
+                btn == "2"
+                  ? "text-white bg-[#3F3F3F]"
+                  : "text-black border-gray-300"
+              } border cursor-pointer text-sm orbitron px-4 py-3 rounded-full`}
+            >
               Website Development
             </span>
-            <span className="text-black border text-sm border-gray-300 orbitron px-4 py-3 rounded-full">
+            <span
+              onClick={() => {
+                setBtn("3");
+              }}
+              className={`${
+                btn == "3"
+                  ? "text-white bg-[#3F3F3F]"
+                  : "text-black border-gray-300"
+              } border cursor-pointer text-sm orbitron px-4 py-3 rounded-full`}
+            >
               Mobile App Development
             </span>
           </div>
@@ -52,7 +87,7 @@ const ContactSection = () => {
                 type="text"
                 placeholder="Project Details"
               />
-              <img src="/contactbtn.png" className="w-24 my-4" />
+              <img src="/svg/btn (1).svg" className="w-24 my-4" />
             </form>
             <div className="flex justify-end pb-14 space-y-6 flex-col">
               <div className="orbitron">
@@ -67,7 +102,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
